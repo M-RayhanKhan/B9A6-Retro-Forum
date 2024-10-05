@@ -36,7 +36,7 @@
             <!-- input Field -->
            <div class="relative">
             <input id="search-input" type="text" class="md:w-[90%] w-full py-3 outline-none px-5 rounded-full">
-            <button class="px-8 absolute top-1 md:right-12 right-2 py-2 rounded-full text-white bg-btn">Search</button>
+            <button onclick="handleSearchCategory()" class="px-8 absolute top-1 md:right-12 right-2 py-2 rounded-full text-white bg-btn">Search</button>
            </div>
           </div>
           <div class="md:flex-1 w-full ">
@@ -72,63 +72,23 @@
             </div>
             <!-- api section -->
           <div class="grid md:grid-cols-6 gap-5">
-            <div class="md:col-span-4 ">
-                <div class="border-purple-600 rounded-2xl border-2 md:p-10 ">
-                    <div class="flex gap-4 ">
-                        <div class="relative">
-                            <img class="w-20 " src="images/joinforum.png" alt="no image here">
-                            <div class="absolute top-0 right-0">
-                                <p class="p-3 bg-green-600 rounded-full w-3"></p>
-                            </div>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-4">
-                                <p id="category">#Music</p>
-                            <p>Author: <span id="author-name">Awlad hossin</span></p>
-                            </div>
-                            <h1 id="title" class="text-xl font-bold">title</h1>
-                            <p id="description" class="text-gray-500">Description</p>
-                            <!-- message -->
-                         <div class="flex justify-between">
-                            <div class="flex items-center gap-4">
-                                <div class="flex items-center gap-2 text-gray-500">
-                                    <i class="fa-regular fa-message"></i>
-                                    <p id="comment-count">comment count</p>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <p id="view-count">view count</p>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500">
-                                    <i class="fa-regular fa-clock"></i>
-                                    <p id="">post_time Min</p>
-                                </div>
-                            
-                            </div>
-                            <!-- message button -->
-                            <div class="md:ml-16">
-                                <img class="w-8" src="https://img.icons8.com/?size=80&id=CLuWGSvnuOz9&format=png" alt="">
-                            </div>
-                         </div>
-                           
-                        </div>
-                    </div>
-                </div>
+            <div id="items-container" class="md:col-span-4 ">
+             
             </div>
+            <!-- dynamic content -->
             <div class="md:col-span-2 rounded-2xl bg-base-100 p-4 border-2">
                 <div class="flex items-center justify-between">
                     <h5 class="font-bold">Title</h5>
                     <div class="flex items-center">
                         <img class="w-10" src="https://image.shutterstock.com/image-vector/green-check-mark-icon-box-260nw-536858419.jpg" alt="">
-                        <p class='text-gray-500'>Mark as read (<span id="length-count">4</span>)</p>
+                        <p class='text-gray-500'>Mark as read (<span id="markAsReadCount">0</span>)</p>
                     </div>
                 
                 </div>
                     <!-- show title -->
-                    <div class="flex items-center p-2 bg-gray-200 mt-5 mb-2">
-                        <h4 class="font-bold">post data description</h4>
-                        <p><i class="fa-solid fa-eye"></i> <span>post view_count</span></p>
-                    </div>
+                  <div id="markAsReadContainer">
+                 
+                  </div>
             </div>
           </div>
         </section>
@@ -136,6 +96,8 @@
     <footer>
 
     </footer>
+    <!--  -->
+    <script src="script.js"></script>
 </body>
 
 </html>
