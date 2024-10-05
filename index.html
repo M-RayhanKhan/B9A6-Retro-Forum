@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9A6-Retro-Forum</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <!-- font awesome cnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="flex mb-10  flex-col md:flex-row justify-between items-center py-4 md:w-10/12 mx-auto">
+            <div>
+                <img class="w-20" src="./images/logo.png" alt="">
+            </div>
+            <div class="flex items-center gap-5 md:gap-8">
+                <img class="w-7" src="https://img.icons8.com/?size=50&id=73&format=png" alt="">
+                <img class="w-7" src="https://img.icons8.com/?size=48&id=Vk1hVre0P58T&format=png" alt="">
+                <img class="w-7" src="https://img.icons8.com/?size=48&id=AZazdsitsrgg&format=png" alt="">
+                <img class="w-7" src="https://img.icons8.com/?size=48&id=60238&format=png" alt="">
+                <button class="btn bg-[#249fdc] rounded-full ">Sign In</button>
+            </div>
+        </nav>
+        <!-- banner -->
+         <div class="md:w-10/12 px-2 py-5 lg:p-20 gap-10 rounded-xl flex flex-col md:flex-row items-center border-2 border-red-800 bg-color md:h-[400px] md:mx-auto bg-cover bg-center" style="background-image: url('./images/bgbanner.png');">
+          <div class="md:flex-1 space-y-4 flex flex-col justify-center ">
+            <h4 class="text-5xl text-white font-bold">Welcome to the ReTro Forum</h4>
+            <p class="text-gray-400">Share your favorite opinion and win and wp forum coffee mug!</p>
+            <!-- input Field -->
+           <div class="relative">
+            <input id="search-input" type="text" class="md:w-[90%] w-full py-3 outline-none px-5 rounded-full">
+            <button class="px-8 absolute top-1 md:right-12 right-2 py-2 rounded-full text-white bg-btn">Search</button>
+           </div>
+          </div>
+          <div class="md:flex-1 w-full ">
+            <div class="card bg-white  md:w-72">
+                <div class="py-5 space-y-3 px-5">
+                 <div class="flex justify-between">
+                    <p>Registered Users</p>
+                    <p>011</p>
+                 </div>
+                 <div class="flex justify-between">
+                    <p>Forum</p>
+                    <p>05</p>
+                 </div>
+                 <div class="flex justify-between">
+                    <p>Topics</p>
+                    <p>01</p>
+                 </div>
+                 <div class="flex justify-between">
+                    <p>Replies</p>
+                    <p>01</p>
+                 </div>
+                </div>
+              </div>
+          </div>
+         </div>
+    </header>
+    <main class="">
+        <!-- Let’s Discuss section -->
+        <section class="md:w-10/12 mx-auto my-10">
+            <div class="md:w-3/5 mx-auto text-center mb-10">
+                <h2 class="text-4xl font-bold">Let’s Discuss</h2>
+                <p class="text-gray-500">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+            <!-- api section -->
+          <div class="grid md:grid-cols-6 gap-5">
+            <div class="md:col-span-4 ">
+                <div class="border-purple-600 rounded-2xl border-2 md:p-10 ">
+                    <div class="flex gap-4 ">
+                        <div class="relative">
+                            <img class="w-20 " src="images/joinforum.png" alt="no image here">
+                            <div class="absolute top-0 right-0">
+                                <p class="p-3 bg-green-600 rounded-full w-3"></p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-4">
+                                <p id="category">#Music</p>
+                            <p>Author: <span id="author-name">Awlad hossin</span></p>
+                            </div>
+                            <h1 id="title" class="text-xl font-bold">title</h1>
+                            <p id="description" class="text-gray-500">Description</p>
+                            <!-- message -->
+                         <div class="flex justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center gap-2 text-gray-500">
+                                    <i class="fa-regular fa-message"></i>
+                                    <p id="comment-count">comment count</p>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-500">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p id="view-count">view count</p>
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p id="">post_time Min</p>
+                                </div>
+                            
+                            </div>
+                            <!-- message button -->
+                            <div class="md:ml-16">
+                                <img class="w-8" src="https://img.icons8.com/?size=80&id=CLuWGSvnuOz9&format=png" alt="">
+                            </div>
+                         </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-2 rounded-2xl bg-base-100 p-4 border-2">
+                <div class="flex items-center justify-between">
+                    <h5 class="font-bold">Title</h5>
+                    <div class="flex items-center">
+                        <img class="w-10" src="https://image.shutterstock.com/image-vector/green-check-mark-icon-box-260nw-536858419.jpg" alt="">
+                        <p class='text-gray-500'>Mark as read (<span id="length-count">4</span>)</p>
+                    </div>
+                
+                </div>
+                    <!-- show title -->
+                    <div class="flex items-center p-2 bg-gray-200 mt-5 mb-2">
+                        <h4 class="font-bold">post data description</h4>
+                        <p><i class="fa-solid fa-eye"></i> <span>post view_count</span></p>
+                    </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
