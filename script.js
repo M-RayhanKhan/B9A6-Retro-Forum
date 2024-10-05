@@ -80,7 +80,15 @@ const markAsRead = (description, view_count) => {
    <p class='flex items-center text-gray-500'><i class="fa-solid fa-eye"></i> <span>${view_count}</span></p>
    </div>
 `
-    markAsReadContainer.appendChild(div);
+markAsReadContainer.appendChild(div);
+handlerMarkCount()
+}
+
+const handlerMarkCount = () =>{
+    const prevCount = document.getElementById('markAsReadCount').innerText;;
+    const convertedCount = parseInt(prevCount);
+    let sum = convertedCount + 1;
+    document.getElementById('markAsReadCount').innerText = sum;
 }
 
 loadAllPosts()
